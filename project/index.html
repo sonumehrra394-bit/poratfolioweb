@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>My Portfolio</title>
+  <style>
+    *{margin:0;padding:0;box-sizing:border-box;font-family:Arial, sans-serif}
+    body{line-height:1.6;background:#f4f4f4;color:#333}
+    header{background:#333;color:#fff;padding:20px 0;text-align:center}
+    nav a{color:#fff;margin:0 15px;text-decoration:none;font-weight:bold}
+    nav a:hover{color:#ff9800}
+    section{padding:40px 20px;text-align:center}
+    .container{max-width:1000px;margin:auto}
+
+    /* Hero Image */
+    .hero-img{width:150px;height:150px;border-radius:50%;object-fit:cover;margin:20px auto;display:block;border:4px solid #ff9800}
+
+    /* About Image */
+    .about-img{width:200px;border-radius:10px;margin:20px auto;display:block}
+
+    .projects{display:grid;grid-template-columns:repeat(auto-fit,minmax(250px,1fr));gap:20px}
+    .card{background:#fff;padding:20px;border-radius:10px;box-shadow:0 2px 5px rgba(0,0,0,0.2)}
+    .card img{width:100%;border-radius:10px;margin-bottom:10px}
+
+    footer{background:#333;color:#fff;text-align:center;padding:15px}
+    button{padding:10px 20px;border:none;background:#333;color:#fff;border-radius:5px;cursor:pointer}
+    button:hover{background:#ff9800}
+  </style>
+</head>
+<body>
+
+<header>
+  <h1>SURENDER KUMAR (SONU MEHRRA)</h1>
+  <p>Web Developer | Student</p>
+  <nav>
+    <a href="#home">Home</a>
+    <a href="#about">About</a>
+    <a href="#projects">Projects</a>
+    <a href="#contact">Contact</a>
+  </nav>
+</header>
+
+<section id="home">
+  <div class="container">
+    <h2>Welcome to My Portfolio</h2>
+    <!-- Profile Image -->
+    <img src="1686145087177.jpg" alt="Profile Image" class="hero-img">
+    <p>I am a passionate web developer.</p>
+    <button onclick="showMessage()">Click Me</button>
+  </div>
+</section>
+
+<section id="about">
+  <div class="container">
+    <h2>About Me</h2>
+    <!-- About Image -->
+    <img src="https://via.placeholder.com/200" alt="About Image" class="about-img">
+    <p> Web Development. I love building websites.</p>
+  </div>
+</section>
+
+<section id="projects">
+  <div class="container">
+    <h2>My Projects</h2>
+    <div class="projects">
+      <div class="card">
+        <img src="download.png" alt="Project 1">
+        <h3>Project 1</h3>
+        <p>Basic Website</p>
+      </div>
+      <div class="card">
+        <img src="logo.png" alt="Project 2">
+        <h3>Project 2</h3>
+        <p>JavaScript App</p>
+      </div>
+      <div class="card">
+        <img src="download1.jpg" alt="Project 3">
+        <h3>Project 3</h3>
+        <p>Portfolio Website</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="contact">
+  <div class="container">
+    <h2>Contact Me</h2>
+    <p>Email: skmehrras@gmail.com</p>
+    <p>Phone no : 9079072394</p>
+  </div>
+</section>
+
+<footer>
+  <p>© 2026 surender </p>
+</footer>
+
+<script>
+function showMessage(){
+  alert("THANKS FOR CONTECTING WITH ME!");
+}
+</script>
+
+</body>
+</html>
